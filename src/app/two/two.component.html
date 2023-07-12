@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card mt-4">
+                <form [formGroup]="contactForm" class="A">
+                    <div class="form-group col-6">
+                        <label for="fname">First Name</label>
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="lname">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="">How should we contact you?</label><br>
+                        <input type="radio" id="" name="contact" value="Phone" routerLink="phone">
+                        <label for="phone">Phone</label><br>
+                        <input type="radio" id="" name="contact" value="Email" routerLink="email">
+                        <label for="email">Email</label><br>
+                    </div>
+                    <div class="col-6">
+                        <router-outlet></router-outlet>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
